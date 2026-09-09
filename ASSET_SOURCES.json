@@ -1,0 +1,83 @@
+{
+  "munnar": {
+    "page": "https://www.keralatourism.org/photo-gallery/munnar/3/",
+    "url": "https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Flarge-desktop%2Fmunnar-1729065668_a1b64fcb0005fd2cb703.webp&w=3840&q=75",
+    "alt": "Munnar",
+    "local": "/workspace/scratch/76bf6465c730/kerala-research/munnar.webp",
+    "bytes": 353507
+  },
+  "fort-kochi": {
+    "page": "https://www.keralatourism.org/photo-gallery/fortkochi-chinese-fishing-net-ernakulam/2781/",
+    "url": "https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Flarge-desktop%2Ffort-kochi-1727493941_56d64b0f511882716463.webp&w=3840&q=75",
+    "alt": "Fort Kochi",
+    "local": "/workspace/scratch/76bf6465c730/kerala-research/fort-kochi.webp",
+    "bytes": 117689
+  },
+  "backwaters": {
+    "page": "https://www.keralatourism.org/photo-gallery/alappuzha/1396/",
+    "url": "https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Flarge-desktop%2Fsensuous-alappuzha-1729067054_5e328c461ccae1cff8e4.webp&w=3840&q=75",
+    "alt": "Sensuous Alappuzha",
+    "local": "/workspace/scratch/76bf6465c730/kerala-research/backwaters.webp",
+    "bytes": 292881
+  },
+  "sadya": {
+    "page": "https://www.keralatourism.org/kerala-food/sadya/",
+    "url": "https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Flarge-desktop%2Fsadya-1729185649_f1c07c010aa53c93176b.webp&w=3840&q=75",
+    "alt": "Sadya",
+    "local": "/workspace/scratch/76bf6465c730/kerala-research/sadya.webp",
+    "bytes": 220185
+  },
+  "coir": {
+    "page": "https://www.keralatourism.org/responsible-tourism/photo-gallery/coir-making/45",
+    "url": "https://www.keralatourism.org/responsible-tourism/uploads/large-desktop/custom-1-20230506112337562839.jpg",
+    "alt": "Coir Making",
+    "local": "/workspace/scratch/76bf6465c730/kerala-research/coir.jpg",
+    "bytes": 105622
+  },
+  "athirappilly": {
+    "url": "https://www.keralatourism.org/_next/image/?q=75&url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Flarge-desktop%2Fathirappilly-waterfalls-in-thrissur-1728386352_65e9b6675e4874da453a.webp&w=3840",
+    "page": "https://www.keralatourism.org/photo-gallery/athirappally-waterfalls/16/",
+    "local": "/workspace/scratch/76bf6465c730/kerala-research/athirappilly.webp",
+    "bytes": 263843
+  },
+  "alappuzha": {
+    "url": "https://www.keralatourism.org/_next/image/?q=75&url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Flarge-desktop%2Falappuzha-backwaters-1727186253_96820712049cc729a4ef.webp&w=3840",
+    "page": "https://www.keralatourism.org/photo-gallery/alappuzha-backwaters/1694/",
+    "local": "/workspace/scratch/76bf6465c730/kerala-research/alappuzha.webp",
+    "bytes": 166479
+  },
+  "hero-video": {
+    "page": "https://www.keralatourism.org/",
+    "url": "https://www.keralatourism.org/ktadmin/img/pages/video/kumarakom-1707217580_9c58f84841733798a0db.mp4",
+    "local": "dist/assets/video/kerala-backwaters.mp4",
+    "description": "Kerala Tourism Kumarakom film. 1920x1080, 20.44 seconds. Dedicated hero film; poster extracted from this video."
+  },
+  "closing-video": {
+    "page": "https://travelio-wbs.framer.website/",
+    "url": "https://framerusercontent.com/assets/jR4l8lJ3s7PY6vvwC8kpip85StQ.mp4",
+    "local": "dist/assets/video/closing-sunset.mp4",
+    "description": "Original Travelio closing sunset film, restored at the user\u2019s explicit request. Used as an atmospheric closing film without a geographical claim."
+  },
+  "hero-clouds": {
+    "page": "https://travelio-wbs.framer.website/",
+    "assets": [
+      "https://framerusercontent.com/images/Q5S1u6umPHpGRA2Vw4EGgTijziI.png",
+      "https://framerusercontent.com/images/YApDDkYaJPOth2ThyXbHiwPU7UM.png"
+    ],
+    "description": "Original decorative cloud layers restored at the user\u2019s request; 18-second alternating drift with scroll parallax."
+  },
+  "fleet-model-images": {
+    "dzire": "https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:528c5c2b-4d2b-440c-b287-720983416144/as/Dzire_Desktop_Image_Front_02.png?width=1600",
+    "innova": "https://global.toyota/pages/release/615246/Innova_S.JPG",
+    "crysta": "https://static.toyotabharat.com/images/showroom/innova-mmc/super-white-color-1600x600.webp",
+    "note": "Official manufacturer model imagery; not a claim about the exact vehicle supplied."
+  },
+  "fleet-isolated-edits": {
+    "description": "Dzire and Innova manufacturer reference photos edited with the built-in image tool to isolate cars on white. Crysta uses original transparent manufacturer asset. All are illustrative model visuals.",
+    "files": [
+      "dist/assets/kerala/dzire-isolated.png",
+      "dist/assets/kerala/innova-isolated.png"
+    ],
+    "prompt": "Remove scenery and objects; preserve vehicle model and photographic details; center the full car on a seamless pure white background."
+  }
+}
