@@ -56,7 +56,7 @@
     "page": "https://travelio-wbs.framer.website/",
     "url": "https://framerusercontent.com/assets/jR4l8lJ3s7PY6vvwC8kpip85StQ.mp4",
     "local": "dist/assets/video/closing-sunset.mp4",
-    "description": "Original Travelio closing sunset film, restored at the user\u2019s explicit request. Used as an atmospheric closing film without a geographical claim."
+    "description": "Original Travelio closing sunset film, restored at the user’s explicit request. Used as an atmospheric closing film without a geographical claim."
   },
   "hero-clouds": {
     "page": "https://travelio-wbs.framer.website/",
@@ -64,7 +64,7 @@
       "https://framerusercontent.com/images/Q5S1u6umPHpGRA2Vw4EGgTijziI.png",
       "https://framerusercontent.com/images/YApDDkYaJPOth2ThyXbHiwPU7UM.png"
     ],
-    "description": "Original decorative cloud layers restored at the user\u2019s request; 18-second alternating drift with scroll parallax."
+    "description": "Original decorative cloud layers restored at the user’s request; 18-second alternating drift with scroll parallax."
   },
   "fleet-model-images": {
     "dzire": "https://www.marutisuzuki.com/adobe/assets/urn:aaid:aem:528c5c2b-4d2b-440c-b287-720983416144/as/Dzire_Desktop_Image_Front_02.png?width=1600",
@@ -79,5 +79,16 @@
       "dist/assets/kerala/innova-isolated.png"
     ],
     "prompt": "Remove scenery and objects; preserve vehicle model and photographic details; center the full car on a seamless pure white background."
+  },
+  "explore-kerala-atlas": {
+    "boundary_source": "https://github.com/geohacker/kerala/blob/master/geojsons/state.geojson",
+    "boundary_attribution": "DataMeet India community / geohacker; CC BY 4.0. Simplified and triangulated for the interactive atlas.",
+    "boundary_license": "https://creativecommons.org/licenses/by/4.0/",
+    "terrain_note": "Illustrated and vertically exaggerated relief, not a DEM or navigation map. Pins are approximate destination centres. Flight paths are scenic connections, not road routes.",
+    "library": "Three.js r160 (0.160.0), vendored ESM with MIT license in dist/assets/vendor/THREE-LICENSE.txt",
+    "destination_reference": "https://www.keralatourism.org/destination/",
+    "reference_list": "https://www.keralatourism.org/greencarpet/destinations",
+    "photos": "Reuses the locally stored Kerala Tourism Munnar, Fort Kochi, Athirappilly, Alappuzha and client Vaikom photographs documented above.",
+    "uploaded_references": "The three user-uploaded reference images informed the 3D terrain and camera direction; they are not presented as photographs of Kerala."
   }
 }
