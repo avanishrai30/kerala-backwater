@@ -1,0 +1,6 @@
+{
+  "name": "arafath-aiavro-new",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": true
+}
