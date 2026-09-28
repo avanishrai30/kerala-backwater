@@ -38,3 +38,57 @@
 @media(prefers-reduced-motion:reduce){.fleet-card .fleet-stage img{will-change:auto}}
 /* Only the isolated car moves; the centered display and card stay fixed. */
 .fleet-stage{background:#fff;isolation:isolate}.fleet-card .fleet-stage img,.fleet-card:nth-child(2) .fleet-stage img{width:100%;height:94%;max-width:none;object-fit:contain;object-position:50% 50%;margin:0;transform-origin:center;mix-blend-mode:multiply}.fleet-card:nth-child(3) .fleet-stage img{width:150%;height:100%;object-fit:contain;object-position:center}.fleet-road{display:none}
+
+/* Trusted by our customers: TripAdvisor & Google Reviews */
+.reviews-section{background:var(--cream);position:relative}
+.trust-platforms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-bottom:45px}
+.trust-platform-card{background:#fff;border:1px solid #e2e4dc;border-radius:var(--radius);padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px;box-shadow:0 4px 20px #1a1a1708;transition:transform .25s,box-shadow .25s}
+.trust-platform-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px #1a1a1712}
+.platform-info{display:flex;align-items:center;gap:18px}
+.platform-icon{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;flex:none;background:#f7f8f4;border:1px solid #e3e6dd}
+.platform-icon.tripadvisor{background:#e8f7f0;border-color:#bce9d4}
+.platform-icon.google{background:#fff;border-color:#e4e5dd}
+.platform-score-wrap{display:flex;flex-direction:column}
+.platform-score-row{display:flex;align-items:baseline;gap:8px}
+.platform-score-row strong{font-size:32px;font-weight:600;line-height:1;letter-spacing:-.03em}
+.platform-stars{font-size:15px;letter-spacing:2px;line-height:1}
+.platform-stars.ta-stars{color:#00aa6c}
+.platform-stars.g-stars{color:#fbbc04}
+.platform-details{font-size:13px;color:var(--muted);margin-top:5px;line-height:1.4}
+.platform-details b{color:var(--ink);font-weight:600}
+.platform-link-btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:99px;border:1px solid var(--ink);font-size:13px;font-weight:500;color:var(--ink);background:transparent;white-space:nowrap;transition:background .2s,color .2s;flex:none}
+.platform-link-btn span{font-size:15px;display:inline-block;transition:transform .2s}
+.platform-link-btn:hover{background:var(--ink);color:#fff}
+.platform-link-btn:hover span{transform:translate(2px,-2px)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+.review-card{background:#fff;border:1px solid #e4e6dd;border-radius:var(--radius);padding:32px 28px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 4px 18px #1a1a1706;transition:transform .25s,box-shadow .25s}
+.review-card:hover{transform:translateY(-3px);box-shadow:0 14px 35px #1a1a1710}
+.review-card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.review-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:20px;font-size:11px;font-weight:500;letter-spacing:.04em}
+.review-badge.google{background:var(--lemon);color:#6c5204}
+.review-badge.tripadvisor{background:var(--sage);color:#204a25}
+.review-stars{color:#e29f12;font-size:14px;letter-spacing:2px}
+.review-quote{font-size:15.5px;line-height:1.65;color:var(--ink);margin-bottom:24px;flex:1}
+.review-quote em{font-family:var(--serif);font-style:italic;font-weight:600}
+.review-author{border-top:1px dashed #dcded5;padding-top:18px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.review-author strong{display:block;font-size:15px;color:var(--ink);font-weight:600}
+.review-author small{display:block;font-size:12px;color:var(--muted);margin-top:3px}
+.review-trip-tag{font-size:10px;padding:4px 10px;background:#f3f4ee;border-radius:12px;color:var(--muted);letter-spacing:.03em;text-transform:uppercase;font-weight:500;white-space:nowrap}
+.reviews-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:45px}
+
+@media(max-width:960px){
+  .trust-platforms{grid-template-columns:1fr;gap:20px}
+  .reviews-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+  .reviews-grid>.review-card:last-child{grid-column:1/-1}
+}
+@media(max-width:640px){
+  .trust-platform-card{padding:24px 20px;flex-direction:column;align-items:stretch;gap:20px}
+  .platform-link-btn{justify-content:center;text-align:center}
+  .reviews-grid{grid-template-columns:1fr;gap:20px}
+  .reviews-grid>.review-card:last-child{grid-column:auto}
+  .review-card{padding:26px 20px}
+  .review-quote{font-size:14.5px}
+  .reviews-cta{flex-direction:column;align-items:stretch;max-width:360px;margin-inline:auto}
+  .reviews-cta .button{justify-content:center}
+}
+
