@@ -92,3 +92,35 @@
   .reviews-cta .button{justify-content:center}
 }
 
+/* Universal Browser-Accessible Keywords Directory */
+.keywords-directory{padding-block:60px 100px}
+.keywords-desc-card{background:var(--cream);border:1px solid #e5e6dd;border-radius:var(--radius);padding:40px;margin-bottom:60px;display:grid;grid-template-columns:1fr auto;gap:35px;align-items:center}
+.keywords-desc-card h2{font-size:32px;margin-bottom:16px}
+.keywords-desc-card p{font-size:16px;line-height:1.75;max-width:760px;color:var(--ink)}
+.keywords-meta-actions{display:flex;flex-direction:column;gap:12px;flex:none}
+.keywords-meta-actions a{font-size:13px;padding:12px 18px;border:1px solid var(--line);border-radius:99px;background:#fff;text-align:center;transition:background .2s,border-color .2s}
+.keywords-meta-actions a:hover{background:var(--lemon);border-color:var(--ink)}
+.keywords-group{margin-bottom:55px}
+.keywords-group-header{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid #dcded4;padding-bottom:16px;margin-bottom:28px;gap:20px;flex-wrap:wrap}
+.keywords-group-header h3{font-size:26px;color:var(--ink)}
+.keywords-group-header span{font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.keywords-pills-grid{display:flex;flex-wrap:wrap;gap:12px}
+.keyword-pill{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;background:#fff;border:1px solid #dadcd2;border-radius:99px;font-size:14px;color:var(--ink);transition:all .2s;text-decoration:none;box-shadow:0 2px 8px #1a1a1705}
+.keyword-pill:hover{background:var(--ink);color:#fff;border-color:var(--ink);transform:translateY(-2px);box-shadow:0 8px 20px #1a1a1715}
+.keyword-pill span.arrow{font-size:14px;opacity:.6;transition:transform .2s}
+.keyword-pill:hover span.arrow{opacity:1;transform:translate(2px,-2px)}
+.keyword-pill.backwater{border-left:4px solid #00aa6c}
+.keyword-pill.kerala-travel{border-left:4px solid #d97706}
+.keyword-pill.taxi-cab{border-left:4px solid #2563eb}
+.keywords-info-box{background:#fff;border:1px dashed #c8cbc0;border-radius:20px;padding:30px;margin-top:60px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.keywords-info-box h4{font-size:18px;margin:0 0 6px}
+.keywords-info-box p{font-size:14px;color:var(--muted);margin:0}
+
+@media(max-width:800px){
+  .keywords-desc-card{grid-template-columns:1fr;padding:28px 22px;gap:22px}
+  .keywords-meta-actions{flex-direction:row;flex-wrap:wrap}
+  .keyword-pill{font-size:13px;padding:10px 16px}
+  .keywords-info-box{padding:22px}
+}
+
+
