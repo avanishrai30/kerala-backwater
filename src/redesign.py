@@ -8,10 +8,10 @@ def btn(label,url='/contact',cls=''):
  return f'<a class="button {cls}" href="{url}">{label}<span aria-hidden="true">↗</span></a>'
 def eyebrow(s):return f'<span class="eyebrow"><span aria-hidden="true">✳</span> {s} <span aria-hidden="true">✳</span></span>'
 def heading(k,t,p='',center=False):return f'<div class="section-heading {"center" if center else ""}" data-reveal>{eyebrow(k)}<h2>{t}</h2>{f"<p>{p}</p>" if p else ""}</div>'
-nav='''<a class="skip" href="#content">Skip to content</a><header class="header"><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="menu-label">Menu</span></button><a class="brand" href="/" aria-label="Arafath Tours home"><strong>Arafath</strong><small>TOURS</small></a><a class="nav-cta" href="/contact">Plan a Trip <span aria-hidden="true">↗</span></a><nav id="mobile-menu" aria-label="Site navigation" hidden><a href="/tour">The experience</a><a href="/tours">Things to do</a><a href="/traveler-stories">Village gallery</a><a href="/cabs">Cab journeys</a><a href="/location">Explore Kerala</a><a href="/blog">Journal</a><a href="/keywords">Keywords</a><a href="/about">About Arafath</a><a href="/contact">Plan your trip ↗</a></nav></header>'''
+nav='''<a class="skip" href="#content">Skip to content</a><header class="header"><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="menu-label">Menu</span></button><a class="brand" href="/" aria-label="Arafath Tours home"><strong>Arafath</strong><small>TOURS</small></a><a class="nav-cta" href="/contact">Plan a Trip <span aria-hidden="true">↗</span></a><nav id="mobile-menu" aria-label="Site navigation" hidden><a href="/tour">The experience</a><a href="/tours">Things to do</a><a href="/traveler-stories">Village gallery</a><a href="/cabs">Cab journeys</a><a href="/location">Explore Kerala</a><a href="/blog">Journal</a><a href="/about">About Arafath</a><a href="/contact">Plan your trip ↗</a></nav></header>'''
 def video(file,poster,kind):
  return f'<video class="ambient-video" autoplay muted loop playsinline preload="metadata" poster="/assets/video/{poster}" aria-label="{kind}" data-ambient><source src="/assets/video/{file}" type="video/mp4"></video><button class="video-toggle" aria-label="Pause background video" aria-pressed="false">Ⅱ <span>Pause film</span></button>'
-def footer():return f'''<section class="closing">{video('closing-sunset.mp4','closing-poster.jpg','Sunset beach film')}<div class="closing-content" data-reveal>{eyebrow('A little closer to the extraordinary')}<h2>Come for the view.<br>Stay for the <em>feeling.</em></h2>{btn('Let’s plan your journey','/contact','light')}</div></section><footer class="footer wrap"><div class="footer-top"><a class="brand" href="/"><strong>Arafath</strong><small>TOURS & TRAVELS</small></a><p>Slow journeys. Local stories.<br>Beautifully Kerala.</p><div><a href="tel:+919947478328">+91 99474 78328 ↗</a><a href="mailto:Arafathappu52@gmail.com">Arafathappu52@gmail.com ↗</a></div></div><div class="footer-links"><a href="/about">Our story</a><a href="/tour">Vaikom tour</a><a href="/cabs">Cab facilities</a><a href="/blog">Kerala journal</a><a href="/keywords">Keywords</a><a href="/contact">Contact</a></div><div class="footer-bottom"><span>© 2026 Arafath Tours · Fort Kochi, Kerala</span><a class="site-credit" href="https://aiavro.com" target="_blank" rel="noopener">Designed by AIavro ↗</a><a href="#top">Back to top ↑</a></div></footer>'''
+def footer():return f'''<section class="closing">{video('closing-sunset.mp4','closing-poster.jpg','Sunset beach film')}<div class="closing-content" data-reveal>{eyebrow('A little closer to the extraordinary')}<h2>Come for the view.<br>Stay for the <em>feeling.</em></h2>{btn('Let’s plan your journey','/contact','light')}</div></section><footer class="footer wrap"><div class="footer-top"><a class="brand" href="/"><strong>Arafath</strong><small>TOURS & TRAVELS</small></a><p>Slow journeys. Local stories.<br>Beautifully Kerala.</p><div><a href="tel:+919947478328">+91 99474 78328 ↗</a><a href="mailto:Arafathappu52@gmail.com">Arafathappu52@gmail.com ↗</a></div></div><div class="footer-links"><a href="/about">Our story</a><a href="/tour">Vaikom tour</a><a href="/cabs">Cab facilities</a><a href="/blog">Kerala journal</a><a href="/contact">Contact</a></div><div class="footer-bottom"><span>© 2026 Arafath Tours · Fort Kochi, Kerala</span><a class="site-credit" href="https://aiavro.com" target="_blank" rel="noopener">Designed by AIavro ↗</a><a href="#top">Back to top ↑</a></div></footer>'''
 SITE_URL = 'https://www.arafathbackwater.online'
 BIZ_NAME = 'Arafath Backwater Tours & Travels'
 BIZ_DESC = ('Arafath Backwater Tours & Travels specializes in Kerala backwater tours, Alleppey houseboat bookings, '
@@ -22,9 +22,125 @@ BIZ_DESC = ('Arafath Backwater Tours & Travels specializes in Kerala backwater t
             'Kerala’s beautiful backwaters, traditional villages, scenic landscapes, and cultural attractions with convenient and personalized travel arrangements.')
 
 KEYWORDS_DATA = {
-    "backwater": {
+    "priority_core": {
+        "title": "Top Priority & Core Identity Keywords",
+        "desc": "Signature Vaikom village backwater tours, traditional bamboo boats, Kerala village tourism, and authentic local food.",
+        "route": "/tour",
+        "keywords": [
+            "Vaikom Backwater Tour",
+            "Vaikom Village Experience",
+            "Vaikom Boat Ride",
+            "Bamboo Boat Ride Kerala",
+            "Kerala Backwater Experience",
+            "Kerala Village Tour",
+            "Vaikom Backwaters",
+            "Backwater Tour from Fort Kochi",
+            "Authentic Kerala Village Experience",
+            "Kerala Traditional Village Experience",
+            "Traditional bamboo boat experiences",
+            "Kerala village tourism",
+            "Traditional local crafts",
+            "Authentic Kerala food experiences",
+            "Private Kerala travel experiences",
+            "Kerala Traditional Village Tour",
+            "Kerala Local Crafts Experience",
+            "Traditional Kerala Lunch",
+            "Kerala Tourism Experience",
+            "Fort Kochi to Vaikom Tour"
+        ]
+    },
+    "vaikom_tourism": {
+        "title": "Vaikom Tourism & High-Intent Backwater Search",
+        "desc": "Peaceful rural waterways, private boat tours, and uncrowded day trips in Vaikom, Kerala.",
+        "route": "/tour",
+        "keywords": [
+            "Best backwater tour in Vaikom",
+            "Vaikom tourism",
+            "Vaikom sightseeing",
+            "Things to do in Vaikom",
+            "Vaikom day trip",
+            "Vaikom backwater boating",
+            "Vaikom village backwater experience",
+            "Vaikom traditional boat ride",
+            "Vaikom private boat tour",
+            "Vaikom Kerala village tourism",
+            "Best backwater experience in Kerala",
+            "Kerala backwater boat tour",
+            "Kerala village backwater cruise",
+            "Traditional Kerala boat experience",
+            "Peaceful backwater tour Kerala",
+            "Kerala countryside experience",
+            "Kerala rural tourism",
+            "Authentic Kerala village tourism",
+            "Kerala cultural tourism",
+            "Kerala village life experience"
+        ]
+    },
+    "village_cultural": {
+        "title": "Village, Craft & Cultural Experiences",
+        "desc": "Authentic coir rope making, coconut leaf weaving, traditional pottery, and farm-fresh banana leaf meals.",
+        "route": "/tours",
+        "keywords": [
+            "Traditional Kerala village activities",
+            "Kerala local culture experience",
+            "Kerala village craft experience",
+            "Traditional pottery making Kerala",
+            "Kerala coir making experience",
+            "Kerala village food experience",
+            "Local village experiences in Kerala",
+            "Kerala traditional lifestyle experience",
+            "Authentic village life in Kerala",
+            "Kerala cultural village tour"
+        ]
+    },
+    "international_travel": {
+        "title": "International Tourist & Offbeat Kerala Keywords",
+        "desc": "Reaching global travellers planning bespoke, sustainable, and peaceful backwater journeys to Kerala.",
+        "route": "/blog/vaikom-backwater-tour-kerala-village-guide",
+        "keywords": [
+            "Authentic Kerala village experience",
+            "Kerala backwater village tour",
+            "Traditional Kerala boat ride",
+            "Private Kerala backwater tour",
+            "Kerala cultural experiences",
+            "Kerala village life tour",
+            "Local experiences in Kerala India",
+            "Offbeat Kerala tourism",
+            "Kerala countryside boat ride",
+            "Kerala village day trip",
+            "Traditional food experience Kerala",
+            "Kerala local guided experience",
+            "Vaikom backwaters India",
+            "Kerala village tourism experience"
+        ]
+    },
+    "taxi_transport": {
+        "title": "Tourism Taxi, Transfers & Outstation Cabs",
+        "desc": "Chauffeur-driven AC vehicles for Fort Kochi, airport transfers, Munnar hill station, and Alleppey.",
+        "route": "/cabs",
+        "keywords": [
+            "Kerala Tourism Taxi Service",
+            "Kochi Tourism Taxi Service",
+            "Kerala Airport Taxi Service",
+            "Kochi Airport Transfers",
+            "Kerala Sightseeing Taxi",
+            "Private Taxi for Kerala Tours",
+            "Kerala Tourist Cab Booking",
+            "Fort Kochi to Vaikom trip",
+            "Vaikom tour from Kochi",
+            "Fort Kochi backwater tour",
+            "Kerala tour from Fort Kochi",
+            "Fort Kochi private tour",
+            "Kerala sightseeing from Fort Kochi",
+            "Kochi to Vaikom travel",
+            "Fort Kochi to Munnar cab",
+            "Fort Kochi to Alleppey cab",
+            "Fort Kochi to Kumarakom cab"
+        ]
+    },
+    "backwater_houseboat": {
         "title": "Backwater Tours & Houseboat Services",
-        "desc": "Traditional kettuvallam houseboats, quiet village canal cruises, day trips, and customized backwater packages.",
+        "desc": "Houseboat reservations, scenic day cruises, and customized backwater packages.",
         "route": "/tour",
         "keywords": [
             "Kerala Backwater Tours",
@@ -35,7 +151,6 @@ KEYWORDS_DATA = {
             "Kerala Backwater Cruise",
             "Kochi Backwater Cruise",
             "Alleppey Houseboat Day Cruise",
-            "Kerala Village Backwater Tours",
             "Private Backwater Tours Kerala",
             "Kerala Backwater Trips",
             "Alleppey Backwater Experiences",
@@ -48,40 +163,16 @@ KEYWORDS_DATA = {
             "Customized Backwater Tour Packages",
             "Alleppey Backwater Cruise"
         ]
-    },
-    "kerala_travel": {
-        "title": "Kerala Tours & Travel Services",
-        "desc": "Complete Kerala holiday packages, Fort Kochi heritage walks, Munnar tea country retreats, and custom itineraries.",
-        "route": "/tours",
-        "keywords": [
-            "Kerala Tour Packages",
-            "Kerala Travel Agency",
-            "Fort Kochi Sightseeing Tours",
-            "Munnar Tour Packages",
-            "Private Tours in Kerala",
-            "Customized Kerala Holiday Packages",
-            "Kochi Local Tours",
-            "Kerala Tourism",
-            "Kerala Sightseeing Tours"
-        ]
-    },
-    "taxi_transport": {
-        "title": "Tourism Taxi & Transportation Services",
-        "desc": "Cochin airport taxi transfers, chauffeur-driven AC cabs, sightseeing vehicles, and outstation Kerala tours.",
-        "route": "/cabs",
-        "keywords": [
-            "Kerala Tourism Taxi Service",
-            "Kochi Tourism Taxi Service",
-            "Kerala Airport Taxi Service",
-            "Kochi Airport Transfers",
-            "Kerala Sightseeing Taxi",
-            "Private Taxi for Kerala Tours",
-            "Kerala Tourist Cab Booking"
-        ]
     }
 }
 
-ALL_KEYWORDS_LIST = [k for grp in KEYWORDS_DATA.values() for k in grp["keywords"]]
+# Deduplicated keywords list preserving order
+ALL_KEYWORDS_LIST = []
+for grp in KEYWORDS_DATA.values():
+    for k in grp["keywords"]:
+        if k not in ALL_KEYWORDS_LIST:
+            ALL_KEYWORDS_LIST.append(k)
+
 KEYWORDS_STR = ", ".join(ALL_KEYWORDS_LIST)
 
 def schema_org_json(title, desc, canonical_url):
@@ -249,11 +340,18 @@ for a in data['articles']:
 # ==============================================================================
 def render_keywords_directory():
     groups_html = []
-    cls_map = {"backwater": "backwater", "kerala_travel": "kerala-travel", "taxi_transport": "taxi-cab"}
+    cls_map = {
+        "priority_core": "backwater",
+        "vaikom_tourism": "backwater",
+        "village_cultural": "kerala-travel",
+        "international_travel": "kerala-travel",
+        "taxi_transport": "taxi-cab",
+        "backwater_houseboat": "backwater"
+    }
     
     for key, grp in KEYWORDS_DATA.items():
         pills = ''.join(
-            f'<a class="keyword-pill {cls_map[key]}" href="{grp["route"]}" title="{esc(k)} — {BIZ_NAME}">'
+            f'<a class="keyword-pill {cls_map.get(key, "backwater")}" href="{grp["route"]}" title="{esc(k)} — {BIZ_NAME}">'
             f'<span>{esc(k)}</span><span class="arrow" aria-hidden="true">↗</span></a>'
             for k in grp["keywords"]
         )
@@ -261,7 +359,7 @@ def render_keywords_directory():
         <div class="keywords-group" id="{key}">
           <div class="keywords-group-header">
             <h3>{esc(grp["title"])}</h3>
-            <span>{len(grp["keywords"])} Target Search Keywords</span>
+            <span>{len(grp["keywords"])} Curated Search Keywords</span>
           </div>
           <p style="margin-bottom:18px;color:var(--muted);font-size:15px;">{esc(grp["desc"])}</p>
           <div class="keywords-pills-grid">
@@ -278,12 +376,6 @@ def render_keywords_directory():
             {eyebrow(BIZ_NAME)}
             <h2>Keywords &amp; Travel Services Directory</h2>
             <p>{BIZ_DESC}</p>
-          </div>
-          <div class="keywords-meta-actions">
-            <a href="/keywords.json" target="_blank" rel="noopener">Raw JSON Endpoint ↗</a>
-            <a href="/sitemap.xml" target="_blank" rel="noopener">XML Sitemap ↗</a>
-            <a href="/robots.txt" target="_blank" rel="noopener">Robots.txt ↗</a>
-            <a href="/llms.txt" target="_blank" rel="noopener">AI Search (llms.txt) ↗</a>
           </div>
         </div>
         
@@ -374,20 +466,17 @@ sitemap_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 (D/'sitemap.xml').write_text(sitemap_xml)
 
 # 4. llms.txt (Standard AI agent knowledge file)
+llms_services_md = []
+for grp in KEYWORDS_DATA.values():
+    llms_services_md.append(f"### {grp['title']}\n" + "\n".join(f"- {kw}" for kw in grp['keywords']))
+
 llms_txt = f"""# {BIZ_NAME}
 
 > {BIZ_DESC}
 
 ## Core Services & Keywords
 
-### Backwater Tours & Houseboat Services
-{chr(10).join(f"- {kw}" for kw in KEYWORDS_DATA['backwater']['keywords'])}
-
-### Kerala Tours & Travel Services
-{chr(10).join(f"- {kw}" for kw in KEYWORDS_DATA['kerala_travel']['keywords'])}
-
-### Tourism Taxi & Transportation Services
-{chr(10).join(f"- {kw}" for kw in KEYWORDS_DATA['taxi_transport']['keywords'])}
+{chr(10).join(llms_services_md)}
 
 ## Key Destinations
 - Fort Kochi (Heritage, Fishing Nets, Art Cafes)
